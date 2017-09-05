@@ -2,16 +2,13 @@
 Scraps the article and push it into the database
 """
 
-from scraper import Scraper
-
 import json
 import sys
-from datetime import datetime, timedelta
-import re
-import sys
 
-from pymongo import MongoClient
 from bson.objectid import ObjectId
+from pymongo import MongoClient
+
+from scraper import Scraper
 
 client = MongoClient('mongodb://localhost//27017')
 
